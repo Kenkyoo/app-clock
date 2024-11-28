@@ -1,0 +1,78 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.clock-container {
+    background-image: url("images/default.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    max-width: 1000px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: background 0.5s ease-in-out;
+}
+
+.clock-time {
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-size: 4em;
+    font-weight: bolder;
+}
+
+.clock-time p {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+.select-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    gap: 15px;
+}
+
+select {
+    appearance: none;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+select:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+select option {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    font-size: 16px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customizable Clock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="clock-container">
+      <div class="clock-time">
+        <h2 id="time"></h2>
+        <p id="day"></p>
+      </div>
+    </div>
+    <div class="select-container">
+      <label for="backgrounds">Fondo</label>
+      <select name="backgrounds" id="backgroundSelect">
+        <option value="anime">Anime</option>
+        <option value="gradient">Gradient</option>
+        <option value="background">Background</option>
+        <option value="minimal">Minimal</option>
+        <option value="landscape">Landscape</option>
+      </select>
+      <label for="sizes">Tamaño</label>
+      <select name="sizes" id="sizeSelect">
+        <option value="smaller">Smaller</option>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+        <option value="larger">Larger</option>
+      </select>
+      <label for="styles">Estilo</label>
+      <select name="styles" id="styleSelect">
+        <option value="normal">Normal</option>
+        <option value="italic">Italic</option>
+        <option value="oblique">Oblique</option>
+      </select>
+      <label for="fonts">Fuentes</label>
+      <select name="fonts" id="fontSelect">
+        <option value="courier">Courier New</option>
+        <option value="gill">Gill Sans</option>
+        <option value="lucida">Lucida Sans</option>
+        <option value="times">Times New Roman</option>
+        <option value="trebuchet">Trebuchet MS</option>
+      </select>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
